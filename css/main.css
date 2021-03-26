@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input, input:focus {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    padding: 30px;
+    width: 250px;
+    font-size: 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(233, 214, 164, 0.863);
+    opacity: 1; /* Firefox */
+  }
+  
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.overlay#green {
+    background-image: url('../images/mol-groen.jpg');
+}
+
+.overlay#red {
+    background-image: url('../images/mol-rood.jpg');
+}
+
+.hide {
+    display: none;
+}
+
+.credentials {
+    z-index: 2;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-style: italic;
+}
